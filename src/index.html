@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic" />
+  <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css" />
+  <link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css" />
+
+  <title>Startup House recruitment task</title>
+</head>
+
+<body>
+  <main class="wrapper">
+    <header class="appHeader">
+      <div class="container appHeader-inner">
+        <img src="./assets/logo.png" alt="company logo" class="companyLogo" />
+        <h1 class="appTitle">Recruitment task</h1>
+      </div>
+    </header>
+
+    <!-- Filters Section -->
+    <section class="container filtersContainer">
+      <div class="row">
+        <div class="column searchColumn">
+          <label for="newsContentSearch">News content search</label>
+          <input type="search" placeholder="News content search" id="newsContentSearch" />
+        </div>
+        <div class="column">
+          <label for="sectionSelect">Section</label>
+          <select autocomplete="off" id="sectionSelect">
+            <option selected value="">All</option>
+            <option value="books">Books</option>
+            <option value="business">Business</option>
+            <option value="culture">Culture</option>
+            <option value="sport">Sport</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column column-20">
+          <label for="activePageSelect">Active Page</label>
+          <div class="page-selector-container">
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ./Filters Section -->
+
+    <!-- News Section -->
+    <section class="container newsContainer">
+      <div class="row">
+        <div class="column column-65">
+          <h2 class="newsColumnTitle">News List</h2>
+
+          <ul class="newsList">
+            
+          </ul>
+        </div>
+        <div class="column column-55">
+          <h2 class="newsColumnTitle">Read Later</h2>
+
+          <ul class="readLaterList">
+            <li>
+              <h4 class="readLaterItem-title">Saved news title</h4>
+              <section>
+                <a href="https://theguardian.com" class="button button-clear">Read</a>
+                <button id="btn-remove" class="button button-clear">Remove</button>
+              </section>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- ./News Section -->
+  </main>
+
+
+  <script src="./main.js"></script>
+
+  <script>
+    import News from './main.js';
+    const news = new News();
+
+    document.querySelector('body').onload = () => {
+      news.initNews();
+
+      document.querySelector('#sectionSelect').addEventListener('change', (event) => news.setSection = event.target.value);
+    };
+
+    //document.querySelector('#btn-remove').addEventListener('click', testMe);
+  </script>
+</body>
+
+</html>

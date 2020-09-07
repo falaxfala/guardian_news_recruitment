@@ -1,0 +1,68 @@
+/* Base styles */
+.appHeader {
+  background-color: #f4f5f6;
+  padding: 20px;
+  box-shadow: 3px 0 6px 0 #c9ced5;
+}
+
+.appHeader-inner {
+  display: flex;
+  align-items: center;
+}
+
+.companyLogo {
+  height: 40px;
+  margin-right: 30px;
+}
+
+.appTitle {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.filtersContainer {
+  padding-top: 80px;
+}
+
+.newsContainer {
+  padding-top: 80px;
+}
+
+.newsColumnTitle {
+  border-bottom: 1px solid;
+  max-width: 240px;
+  padding-bottom: 5px;
+}
+
+.newsList {
+  list-style: none;
+  margin-top: 40px;
+}
+
+.news {
+  border: 1px solid rgba(88, 88, 88, 0.41);
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: -1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.newsActions {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.readLaterItem-title {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+/* Larger than mobile screen */
+@media (min-width: 40rem) {
+  .appTitle {
+    font-size: 2.4rem;
+  }
+}
