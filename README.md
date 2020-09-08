@@ -1,4 +1,4 @@
-#Request is finished
+# Request is finished
 I hope that everythin is fine. I've got no time for writing any tests, because of my current job. Every notes from me are in the comments in main.js. I will leave here yours default readme.
 
 # JS Recruitment Task
