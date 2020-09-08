@@ -83,11 +83,10 @@
     document.querySelector('body').onload = () => {
       news.initNews();
 
+      //static event handlers
       document.querySelector('#sectionSelect').addEventListener('change', (event) => news.setSection = event.target.value);
       document.querySelector('#newsContentSearch').addEventListener('input', (event) => news.setSearchPhrase = event.target.value);
     };
-
-    //document.querySelector('#btn-remove').addEventListener('click', testMe);
   </script>
 </body>
 
