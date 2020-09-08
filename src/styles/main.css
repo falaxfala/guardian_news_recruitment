@@ -46,6 +46,7 @@
   padding: 20px;
   border-radius: 6px;
   box-shadow: -1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  transition-duration: .3s;
 }
 
 .newsActions {
@@ -55,9 +56,22 @@
   align-items: center;
 }
 
+.readLaterList{
+  list-style: none;
+}
+
+.readLaterList > li {
+  border-bottom: 1px solid rgba(88, 88, 88, 0.41);
+  margin-bottom: 3rem;
+}
+
 .readLaterItem-title {
   display: inline-block;
   margin-bottom: 5px;
+}
+
+.saved{
+  box-shadow: 0px 0px 16px 0px rgba(154,77,202,1);
 }
 
 /* Larger than mobile screen */
